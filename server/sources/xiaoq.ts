@@ -38,7 +38,7 @@ async function fetchReports(dir: string, prefix: string, emoji: string): Promise
       return {
         id: f.sha,
         title: `${emoji} ${dateStr} ${prefix}`,
-        url: `https://github.com/${REPO}/blob/${BRANCH}/${dir}/${f.name}`,
+        url: `/report/${dir}/${f.name}`,
         extra: {
           date: dateStr,
           info: dateStr,

@@ -56,3 +56,33 @@ button:disabled {
 .grabbing * {
   cursor: grabbing;
 }
+
+/* Report page styles */
+.report-content {
+  line-height: 1.8;
+  user-select: text;
+}
+.report-content * {
+  user-select: text;
+  cursor: auto;
+}
+.report-h1 { font-size: 1.5rem; font-weight: 700; margin: 1.5rem 0 0.75rem; }
+.report-h2 { font-size: 1.25rem; font-weight: 700; margin: 1.25rem 0 0.5rem; padding-bottom: 0.25rem; border-bottom: 1px solid rgba(128,128,128,0.2); }
+.report-h3 { font-size: 1.1rem; font-weight: 600; margin: 1rem 0 0.4rem; }
+.report-h4 { font-size: 1rem; font-weight: 600; margin: 0.8rem 0 0.3rem; }
+.report-h5, .report-h6 { font-size: 0.95rem; font-weight: 600; margin: 0.6rem 0 0.2rem; }
+.report-content p { margin: 0.4rem 0; }
+.report-content strong { font-weight: 700; }
+.report-content hr { margin: 1.5rem 0; border-color: rgba(128,128,128,0.2); }
+.report-link { color: #3b82f6; text-decoration: underline; cursor: pointer !important; }
+.report-link:hover { color: #2563eb; }
+.report-ul, .report-ol { padding-left: 1.5rem; margin: 0.4rem 0; }
+.report-li, .report-oli { margin: 0.15rem 0; list-style: disc; }
+.report-oli { list-style: decimal; }
+.report-quote { border-left: 3px solid rgba(128,128,128,0.4); padding: 0.3rem 0.8rem; margin: 0.5rem 0; opacity: 0.8; font-style: italic; }
+.report-table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; font-size: 0.875rem; }
+.report-table th { background: rgba(128,128,128,0.15); padding: 0.4rem 0.6rem; text-align: left; font-weight: 600; border: 1px solid rgba(128,128,128,0.2); }
+.report-table td { padding: 0.35rem 0.6rem; border: 1px solid rgba(128,128,128,0.2); }
+.report-code { background: rgba(0,0,0,0.08); border-radius: 0.5rem; padding: 0.75rem 1rem; margin: 0.5rem 0; overflow-x: auto; font-size: 0.85rem; line-height: 1.5; }
+.dark .report-code { background: rgba(255,255,255,0.08); }
+.report-inline-code { background: rgba(128,128,128,0.15); padding: 0.1rem 0.35rem; border-radius: 0.25rem; font-size: 0.85em; }

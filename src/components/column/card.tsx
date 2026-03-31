@@ -233,7 +233,7 @@ function NewsListHot({ items }: { items: NewsItem[] }) {
       {items?.map((item, i) => (
         <a
           href={width < 768 ? item.mobileUrl || item.url : item.url}
-          target="_blank"
+          {...(item.url.startsWith("/report/") ? {} : { target: "_blank" })}
           key={item.id}
           title={item.extra?.hover}
           className={$(
@@ -281,8 +281,7 @@ function NewsListTimeLine({ items }: { items: NewsItem[] }) {
             )}
             href={width < 768 ? item.mobileUrl || item.url : item.url}
             title={item.extra?.hover}
-            target="_blank"
-            rel="noopener noreferrer"
+            {...(item.url.startsWith("/report/") ? {} : { target: "_blank", rel: "noopener noreferrer" })}
           >
             {item.title}
           </a>
