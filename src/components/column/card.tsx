@@ -33,11 +33,11 @@ export const CardWrapper = forwardRef<HTMLElement, ItemsProps>(({ id, isDragging
     <div
       ref={ref}
       className={$(
-        "flex flex-col h-500px rounded-2xl p-4 cursor-default",
+        "flex flex-col h-500px rounded-2xl p-4 cursor-default shadow-sm",
         // "backdrop-blur-5",
         "transition-opacity-300",
         isDragging && "op-50",
-        `bg-${sources[id].color}-500 dark:bg-${sources[id].color} bg-op-40!`,
+        `bg-${sources[id].color}-500 dark:bg-${sources[id].color} bg-op-20! dark:bg-op-30!`,
       )}
       style={{
         transformOrigin: "50% 50%",
@@ -153,7 +153,7 @@ function NewsCard({ id, setHandleRef }: NewsCardProps) {
 
       <OverlayScrollbar
         className={$([
-          "h-full p-2 overflow-y-auto rounded-2xl bg-base bg-op-70!",
+          "h-full p-2 overflow-y-auto rounded-2xl bg-base bg-op-90!",
           isFetching && `animate-pulse`,
           `sprinkle-${sources[id].color}`,
         ])}

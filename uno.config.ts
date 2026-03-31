@@ -18,7 +18,7 @@ export default defineConfig({
       if (hex) {
         return {
           "background-image": `radial-gradient(ellipse 80% 80% at 50% -30%,
-         rgba(${hex2rgba(hex)?.join(", ")}, 0.3), rgba(255, 255, 255, 0));`,
+         rgba(${hex2rgba(hex)?.join(", ")}, 0.15), rgba(255, 255, 255, 0));`,
         }
       }
     }],
@@ -31,9 +31,9 @@ export default defineConfig({
     ],
   ],
   shortcuts: {
-    "color-base": "color-neutral-800 dark:color-neutral-300",
-    "bg-base": "bg-zinc-200 dark:bg-dark-600",
-    "btn": "op50 hover:op85 cursor-pointer transition-all",
+    "color-base": "color-neutral-800 dark:color-neutral-200",
+    "bg-base": "bg-white dark:bg-neutral-900",
+    "btn": "op60 hover:op100 cursor-pointer transition-all",
   },
   safelist: [
     ...["orange", ...new Set(Object.values(sources).map(k => k.color))].map(k =>
@@ -43,7 +43,7 @@ export default defineConfig({
   ],
   extendTheme: (theme) => {
     // @ts-expect-error >_<
-    theme.colors.primary = theme.colors.red
+    theme.colors.primary = theme.colors.blue
     return theme
   },
 })

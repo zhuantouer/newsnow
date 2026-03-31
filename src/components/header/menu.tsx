@@ -41,7 +41,7 @@ export function Menu() {
             id="dropdown-menu"
             className={$([
               "w-200px",
-              "bg-primary backdrop-blur-5 bg-op-70! rounded-lg shadow-xl",
+              "bg-primary backdrop-blur-5 bg-op-50! rounded-lg shadow-lg",
             ])}
             initial={{
               scale: 0.9,
