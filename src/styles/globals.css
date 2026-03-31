@@ -28,7 +28,7 @@ body {
 }
 
 html.dark body {
-  background-color: #121212;
+  background-color: #1a1a2e;
 }
 
 button:disabled {
