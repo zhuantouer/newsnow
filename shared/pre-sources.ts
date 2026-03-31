@@ -483,6 +483,24 @@ export const originSources = {
       },
     },
   },
+  "xiaoq": {
+    name: "小Q日报",
+    color: "amber",
+    home: "https://github.com",
+    interval: Time.Slow,
+    sub: {
+      finance: {
+        title: "财经头版",
+        type: "realtime",
+        column: "finance",
+      },
+      ai: {
+        title: "AI科技热点",
+        type: "realtime",
+        column: "tech",
+      },
+    },
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {

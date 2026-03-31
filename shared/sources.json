@@ -563,5 +563,33 @@
     "color": "green",
     "interval": 1800000,
     "title": "热播榜"
+  },
+  "xiaoq": {
+    "redirect": "xiaoq-finance",
+    "name": "小Q日报",
+    "type": "realtime",
+    "column": "finance",
+    "home": "https://github.com",
+    "color": "amber",
+    "interval": 3600000,
+    "title": "财经头版"
+  },
+  "xiaoq-finance": {
+    "name": "小Q日报",
+    "type": "realtime",
+    "column": "finance",
+    "home": "https://github.com",
+    "color": "amber",
+    "interval": 3600000,
+    "title": "财经头版"
+  },
+  "xiaoq-ai": {
+    "name": "小Q日报",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://github.com",
+    "color": "amber",
+    "interval": 3600000,
+    "title": "AI科技热点"
   }
 }
